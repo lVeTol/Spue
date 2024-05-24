@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Intro to Java</title>
+		<script>
+			function add2Numbers()
+			{
+				var num1 = document.getElementById("firstnumber").value * 1.0;
+				var num2 = document.getElementById("secondnumber").value * 1.0;
+				document.getElementById("result").innerHTML = num1 + num2;
+			}
+			function average()
+			{
+				var num1 = document.getElementById("firstnumber").value * 1.0;
+				var num2 = document.getElementById("secondnumber").value * 1.0;
+				document.getElementById("result").innerHTML = (num1 + num2) / 2.0;
+			}
+			
+			function multiply ()
+			{
+				var num1 = document.getElementById("firstnumber").value * 1.0;
+				var num2 = document.getElementById("secondnumber").value * 1.0;
+				document.getElementById("result").innerHTML = (num1 * num2);
+			}
+			
+			function divide()
+			{
+				var num1 = document.getElementById("firstnumber").value * 1.0;
+				var num2 = document.getElementById("secondnumber").value * 1.0;
+				document.getElementById("result").innerHTML = (num1 / num2);
+			}
+			
+			function subtract()
+			{
+				var num1 = document.getElementById("firstnumber").value * 1.0;
+				var num2 = document.getElementById("secondnumber").value * 1.0;
+				document.getElementById("result").innerHTML = num1 - num2;
+			}
+			function potenzieren()
+			{
+				var num1 = document.getElementById("firstnumber").value * 1.0;
+				var num2 = document.getElementById("secondnumber").value * 1.0;
+				document.getElementById("result").innerHTML =Math.pow (num1, num2);
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="myheading">
+			We are going to calculate
+		</h1>
+		
+		<form>
+			<label for="firstnumber">erste Zahl:</label>
+			<input type="text" id="firstnumber" name="firstnumber"><br><br>	
+			<label for="secondnumber">erste Zahl:</label>
+			<input type="text" id="secondnumber" name="secondnumber"><br><br>	
+		</form>
+		</p>
+		<button onclick="add2Numbers()">
+				Add
+		</button>
+		<button onclick="average()">
+				Average
+		<button onclick="multiply()">
+				Multiply
+		</button>
+		<button onclick="divide()">
+				Divide
+		</button>
+		<button onclick="subtract()">
+				Subtract
+		</button>
+		<button onclick="potenzieren()">
+				Potenzieren
+		</button>
+		<p id="result" >
+		</p>
+	</body>
+</html>
